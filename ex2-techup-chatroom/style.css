@@ -1,1 +1,70 @@
-/* Start coding here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.chat-header {
+  height: 8%;
+  background-color: grey;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+.chat-body {
+  background-color: rgb(228, 228, 228);
+  height: 92%;
+  width: 100%;
+  padding: 2rem 0;
+}
+.chat-message-r, .chat-message-l{
+   position: relative;
+   width: 100%;
+   display: flex;
+   padding: 0 1rem;
+   margin-bottom: 0.5rem;
+}
+.chat-message-r{
+   justify-content: flex-end;
+}
+.chat-message-l{
+   justify-content: flex-start;
+}
+.chat-bubble-r, .chat-bubble-l, .chat-unsend{
+  width: 20%;
+  position: relative;
+  border-radius: 20px;
+  padding: 0.5rem;
+  text-align: start;
+}
+.chat-bubble-r{
+   background-color: rgb(35, 167, 64);
+}
+.chat-bubble-l{
+   background-color: grey;
+}
+.chat-unsend{
+   background-color: rgb(194, 191, 191);
+}
+button{
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   top: 2px;
+   right: 2px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 100%;
+   background-color: grey;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
