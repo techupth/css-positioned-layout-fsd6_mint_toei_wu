@@ -24,47 +24,61 @@
   width: 100%;
   padding: 2rem 0;
 }
-.chat-message-r, .chat-message-l{
-   position: relative;
-   width: 100%;
-   display: flex;
-   padding: 0 1rem;
-   margin-bottom: 0.5rem;
+.chat-message-r,
+.chat-message-l {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
 }
-.chat-message-r{
-   justify-content: flex-end;
+.chat-message-r {
+  justify-content: flex-end;
 }
-.chat-message-l{
-   justify-content: flex-start;
+.chat-message-l {
+  justify-content: flex-start;
 }
-.chat-bubble-r, .chat-bubble-l, .chat-unsend{
+.chat-bubble-r,
+.chat-bubble-l,
+.chat-unsend {
   width: 20%;
   position: relative;
   border-radius: 20px;
   padding: 0.5rem;
   text-align: start;
+  z-index: 2;
 }
-.chat-bubble-r{
-   background-color: rgb(35, 167, 64);
+.chat-bubble-r {
+  background-color: rgb(35, 167, 64);
 }
-.chat-bubble-l{
-   background-color: grey;
+.tail {
+  background-color: rgb(35, 167, 64);
+  position: absolute;
+  top: -2px;
+  right: 16px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgb(228, 228, 228) transparent transparent rgb(228, 228, 228);
+  z-index: 1;
 }
-.chat-unsend{
-   background-color: rgb(194, 191, 191);
+.chat-bubble-l {
+  background-color: grey;
 }
-button{
-   position: absolute;
-   width: 20px;
-   height: 20px;
-   top: 2px;
-   right: 2px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-radius: 100%;
-   background-color: grey;
-   color: white;
-   border: none;
-   cursor: pointer;
+.chat-unsend {
+  background-color: rgb(194, 191, 191);
+}
+button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  right: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: grey;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
