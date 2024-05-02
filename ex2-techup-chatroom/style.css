@@ -1,1 +1,119 @@
 /* Start coding here */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.chat-interface {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  font-weight: 300;
+  width: 100%;
+}
+
+.chat-box {
+  position: relative;
+}
+
+.box-1,
+.box-2 {
+  background-color: grey;
+  width: 200px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.box-3,
+.box-5 {
+  background-color: rgb(0, 182, 0);
+  width: 200px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.box-4 {
+  background-color: rgb(230, 230, 230);
+  width: 200px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  position: absolute;
+  position: relative;
+}
+
+.box-1 {
+  top: 200px;
+  left: 20px;
+}
+
+.box-2 {
+  top: 255px;
+  left: 20px;
+}
+
+.box-3 {
+  left: 85%;
+  top: 40px;
+}
+
+.green-tail {
+  content: "";
+  background-color: rgb(0, 182, 0);
+  width: fit-content;
+  padding: 5px 5px;
+  border-radius: 100px;
+  z-index: -1;
+  position: absolute;
+  left: 190px;
+  bottom: 30px;
+}
+
+.white-tail {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  padding: 5px 5px;
+  border-radius: 100px;
+  z-index: -1;
+  position: absolute;
+  left: 190px;
+  bottom: 33px;
+  transform: rotate(45deg);
+}
+
+.box-4 {
+  left: 85%;
+  top: 90px;
+}
+
+.box-5 {
+  left: 85%;
+  top: 140px;
+}
+
+.logo-x {
+  background-color: rgb(172, 172, 172);
+  color: white;
+  border-radius: 80px;
+  width: fit-content;
+  padding: 4px 8px;
+  font-style: italic;
+  position: absolute;
+  left: 185px;
+  bottom: 15px;
+  text-align: center;
+}
